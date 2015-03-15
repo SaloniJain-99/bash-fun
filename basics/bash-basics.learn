@@ -1,0 +1,29 @@
+# 
+#
+
+# REDIRECTION
+#============
+# http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html
+# http://wiki.bash-hackers.org/howto/redirection_tutorial
+# Lets learn how to use > , >> , < , &>
+
+# which REDIRECT can be used to save "Hello" to /tmp/hello.txt, truncating file
+$ echo "Hello" REDIRECT /tmp/hello.txt
+
+# which REDIRECT can be used to save "Hello" to /tmp/hello.txt, appending file
+$ echo "Hello" REDIRECT /tmp/hello.txt
+
+# Which REDIRECT can be used to save ls STDOUT and STDERR to /tmp/all.out file
+$ ls REDIRECT /tmp/all.out
+
+# Which REDIRECT can be used to send STDOUT to STDERR for ls
+$ ls REDIRECT
+
+# Which REDIRECT can be used to send STDERR to STDOUT for ls
+$ ls REDIRECT
+
+# PIPES
+#======
+#
+
+# 

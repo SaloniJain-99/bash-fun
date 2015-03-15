@@ -1,0 +1,67 @@
+# bash(1) is a shell or command language interpreter that executes commands read
+# from the standard input or from a file. Thus we start with learning a few 
+# basic Linux commands which are used frequently.
+
+# Which COMMAND can be used to get help about some-command
+$ COMMAND some-command
+
+# Which COMMAND can be used to list directory contents
+$ COMMAND
+
+# Which COMMAND can be used to show present working directory
+$ COMMAND
+
+# Which COMMAND can be used to change directory to /
+$ COMMAND /
+
+# Which COMMAND can be used to reach user's 'home directory'
+$ COMMAND
+
+# Which COMMAND can be used to print "Hello" on STDOUT
+$ COMMAND "Hello"
+
+# Which COMMAND can be used to create empty regular file data.txt
+$ COMMAND data.txt
+
+# Which COMMAND will open data.txt for editing inside text editor
+$ COMMAND data.txt
+
+# Which COMMAND can be used to list contents of data.txt
+$ COMMAND data.txt
+
+# Which COMMAND can be used to sort lines of text file data.txt
+$ COMMAND data.txt
+
+# Which COMMAND can be used to rename file data.txt to input.txt
+$ COMMAND data.txt input.txt
+
+# Which COMMAND can be used to delete file input.txt
+$ COMMAND input.txt
+
+# Which COMMAND can be used to make prog1.sh executable
+$ COMMAND a+x prog1.sh
+
+# Which COMMAND can be used to make user1 owner of prog1.sh
+$ COMMAND user1 prog1.sh
+
+# Which COMMAND can be used to create a named pipe mypipe in /tmp directory
+$ COMMAND /tmp/mypipe
+
+# Which COMMAND can be used to connect to remotehost, using ssh, as user1
+$ COMMAND user1@remotehost
+
+# Which COMMAND can be used to display Linux processes
+$ COMMAND
+
+# Which COMMAND can be used to display amount of free/ used memory in the system
+$ COMMAND
+
+# Which COMMAND can be used to report a snapshot of the current processes
+$ COMMAND
+
+# Which COMMAND can be used to maintain crontab files for individual users
+$ COMMAND
+
+# Which COMMAND can be used to start full-screen window manager that multiplexes
+# a physical terminal between several processes
+$ COMMAND
