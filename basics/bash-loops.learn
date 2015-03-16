@@ -1,0 +1,15 @@
+# COMPLETE following for loop definition to print a, b and c
+# correct syntax errors if any
+$ for COMPLETE ; do echo $loop_var; done
+
+# Write EXPRESSION which will allow following while loop to print a, b and c
+$ echo "a b c" | while EXPRESSION ; do echo $loop_var; done
+
+# Write EXPRESSION which will allow following while loop to print a, b and c in
+# single iteration
+$ echo "a b c" | while EXPRESSION ; do echo $var1 $var2 $var3; done
+
+# update above loops to redirect output to /tmp/loop_out.txt
+#
+
+

@@ -6,6 +6,8 @@
 # answer line = line beginning with $
 # question text = non-empty line just before "answer line"
 
+# BASIC/ MOST USED LINUX COMMANDS
+#================================
 # Which COMMAND can be used to get help about some-command
 $ COMMAND some-command
 
@@ -101,3 +103,58 @@ $ COMMAND
 $ COMMAND
 
 
+# NETWORKING/ MOST USED LINUX COMMANDS
+#=====================================
+
+# Which COMMAND(s) can be used to look up yahoo.com A and MX records
+$ COMMAND yahoo.com
+
+# Which COMMAND(s), with corresponding OPTION(s) can be used to look up 
+# yahoo.com A records in short form (only IP addresses)
+$ COMMAND yahoo.com OPTION
+
+# Which COMMAND(s)/ OPTION(s) can be used to trace all NS A lookup steps 
+$ COMMAND yahoo.com OPTION
+
+# Which COMMAND(s) can be used to show / manipulate the IP routing table on host
+$ COMMAND
+
+# Which COMMAND(s) can be used to configure and show network card information
+$ COMMAND
+
+# Which COMMAND can be used to check if a host is reachable for ICMP echo
+$ COMMAND yahoo.com
+
+# Which COMMAND can be used to lookup domain/ IP ownership information
+$ COMMAND yahoo.com
+
+# Which COMMAND OPSTIONS can be used to list active firewall rules
+$ COMMAND OPTION
+
+# DISK-PARTITIONS-FILESYSTEM/ MOST USED LINUX COMMANDS
+#=====================================================
+
+# Which COMMAND can be used to interactively partition disk /dev/sda
+$ COMAMND /dev/sda
+
+# Which COMMAND + OPTION(S) can list partition information from /dev/sda
+$ COMMAND OPTION /dev/sda
+
+# Which COMMAND can be used to create EXT4 file system on /dev/sda1 partition
+$ COMMAND /dev/sda1
+
+# Which COMMAND can be used to check EXT4 file system on /dev/sda1 partition 
+# for consistency
+$ COMMAND /dev/sda1
+
+# Which COMMAND can be used to show currently mounted file systems on host
+$ COMMAND
+
+# Which COMMAND can be used to mount file system from /dev/sda1 on /mnt/sda1
+$ COMAMND /dev/sda1 /mnt/sda1
+
+# Whcih COMMAND(s) can be used to unmount file system mounted in previous step
+$ COMMAND
+
+# Which COMMAND can be used to display file system disk space usage
+$ COMMAND
