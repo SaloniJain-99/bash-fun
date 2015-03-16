@@ -1,0 +1,9 @@
+# Replace proper KEYWORDS to complete function definition for myfunction
+# and fix any syntax errors
+$ KEYWORD myfunction {} { echo "hello"}
+
+# Write COMMAND that will show definition of existing function "myfunction"
+$ COMMAND myfunction
+
+# Write command that will remove function "myfunction"
+$ COMMAND myfunction

@@ -1,0 +1,40 @@
+# Note : use o1=11 && o2=5 for all problems
+
+# Arithmatic operators
+#=====================
+# http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_04.html#table_03_04
+# 
+# $[]
+# are two variables, use them in following:
+# Fix syntax errors where applicable
+
+# Write COMMAND which will add o1 and o2 and save result in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Write COMMAND which will subtract o2 from o1 and save result in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Write COMMAND which will multiply o1 and o2 and save result in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Write COMMAND which will divide o1 by o2 and save quotient in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Write COMMAND which will divide o1 by o2 and save remainder in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Write COMMAND which will increment value of o1 and save in RESULT
+$ RESULT=COMMAND && echo $RESULT
+
+# Integer comparison
+#===================
+#http://tldp.org/LDP/abs/html/comparison-ops.html
+
+# Write COMPARISION to compare o1 and o2 and evaluate true
+$ if [ COMPARISION ] ; then echo "true"; fi
+
+# Logically AND comparisons C1 and C2 in such a way that following displays Yes
+$ if [ C1 AND C2 ] ; then echo "Yes"; fi 
+
+# Logically OR comparisons C1 and C2 in such a way that following displays Yes
+$ if [ C1 OR C2 ] ; then echo "Yes"; fi 
