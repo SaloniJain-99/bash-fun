@@ -1,0 +1,19 @@
+# Write TEST-COMMAND which will echo Yes in following if command, 
+# if file ~/yes is of directory type
+# Also fix syntx errors
+$ if[ TEST_COMMAND ] ; echo "Yes"  fi
+
+# Write TEST-COMMAND which will
+# create directory ~/bin,  if file ~/bin does not exist (of any type)
+# else echo "some file of same name already exist"
+# Also fix syntx errors
+$ if[ TEST_COMMAND ] ; then mkdir echo "Yes" else then echo "some file of same name already exist"  fi
+
+# Write itest commands C1 and C2 where
+# TEST-COMMAND1 checks if ~/c1 does not exist, echo "no" 
+# TEST-COMMAND2 checks if ~/c2 exist, echo "yes"
+# else echo "?"
+# Also fix syntx errors
+if [C1] then echo "no" elsif C2 then echo "yes" else then echo "?" if;
+
+

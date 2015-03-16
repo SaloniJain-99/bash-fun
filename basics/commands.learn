@@ -2,6 +2,10 @@
 # from the standard input or from a file. Thus we start with learning a few 
 # basic Linux commands which are used frequently.
 
+# replace KEYWORDS in "answer line"s, from question text, make commands complete
+# answer line = line beginning with $
+# question text = non-empty line just before "answer line"
+
 # Which COMMAND can be used to get help about some-command
 $ COMMAND some-command
 
@@ -35,8 +39,20 @@ $ COMMAND data.txt
 # Which COMMAND can be used to rename file data.txt to input.txt
 $ COMMAND data.txt input.txt
 
-# Which COMMAND can be used to delete file input.txt
-$ COMMAND input.txt
+# Which COMMAND can be used to copy file data.txt to copy.txt
+$ COMMAND data.txt copy.txt
+
+# Which COMMAND can be used to create hard link input.hlink to input.txt
+$ COMMAND input.txt input.hlink
+
+# Which COMMAND can be used to create soft link input.slink to input.txt
+$ COMMAND input.txt input.slink
+
+# Which COMMAND can be used to move file ~/input.txt to ~/tmp
+$ COMMAND ~/input.txt /tmp/
+
+# Which COMMAND can be used to delete file /tmp/input.txt
+$ COMMAND /tmp/input.txt
 
 # Which COMMAND can be used to make prog1.sh executable
 $ COMMAND a+x prog1.sh
@@ -44,7 +60,7 @@ $ COMMAND a+x prog1.sh
 # Which COMMAND can be used to make user1 owner of prog1.sh
 $ COMMAND user1 prog1.sh
 
-# Which COMMAND can be used to create a named pipe mypipe in /tmp directory
+# Which COMMAND can be used to create a named pipe "mypipe" in /tmp directory
 $ COMMAND /tmp/mypipe
 
 # Which COMMAND can be used to connect to remotehost, using ssh, as user1
@@ -62,6 +78,26 @@ $ COMMAND
 # Which COMMAND can be used to maintain crontab files for individual users
 $ COMMAND
 
+# Which COMMAND can be used to make archive /tmp/arc.tar from ~
+$ COMMAND /tmp/arc.tar ~
+
+# Which COMMAND can be use to compress /tmp/arc.tar to /tmp/arc.tar.gz
+$ COMMAND /tmp/arc.tar
+
+# Which COMMAND can be use to decompress /tmp/arc.tar.gz to /tmp/arc.tar
+$ COMMAND /tmp/arc.tar.gz
+
+# Which COMMAND can be use to compress /tmp/arc.tar to /tmp/arc.tar.bz2
+$ COMMAND /tmp/arc.tar
+
+# Which COMMAND can be use to decompress /tmp/arc.tar.bz2 to /tmp/arc.tar
+$ COMMAND /tmp/arc.tar.bz2
+
+# Which COMMAND can be used to make typescript of terminal session
+$ COMMAND
+
 # Which COMMAND can be used to start full-screen window manager that multiplexes
 # a physical terminal between several processes
 $ COMMAND
+
+
