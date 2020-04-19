@@ -32,6 +32,8 @@ $ ls CONTROL sort
 
 # VARIABLES
 #==========
+# type, declare, echo, set, export, PS1, PS2, PS3
+# $?, $PATH, unset
 
 # Which BUILTIN(s) can be used to declare variable VAR1
 $ BUILTIN VAR1
@@ -71,6 +73,7 @@ $ BUILTIN VAR1
 
 # BUILTINS
 #=========
+# kill, source/., :, alias, exit, history, read, shift, trap, type, ulimit, umask
 
 # Which BUILTIN can be used to send signal SIGTERM to process with pid 1000
 $ BUILTIN -SIGTERM 1000

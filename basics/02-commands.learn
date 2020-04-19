@@ -8,6 +8,9 @@
 
 # BASIC/ MOST USED LINUX COMMANDS
 #================================
+# man, ls, pwd, cd, echo, touch, vim, cat, sort, mv, cp, ln, mv, rm, chmod, chown, mkfifo
+# ssh, ps, free, top, crontab, tar, gzip, bzip2, script, tmux/ screen
+#
 # Which COMMAND can be used to get help about some-command
 $ COMMAND some-command
 
@@ -105,6 +108,8 @@ $ COMMAND
 
 # NETWORKING/ MOST USED LINUX COMMANDS
 #=====================================
+# host, dig, drill, nslookup, ip, ifconfig, ping, whois, iptables
+#
 
 # Which COMMAND(s) can be used to look up yahoo.com A and MX records
 $ COMMAND yahoo.com
@@ -133,6 +138,7 @@ $ COMMAND OPTION
 
 # DISK-PARTITIONS-FILESYSTEM/ MOST USED LINUX COMMANDS
 #=====================================================
+# fdisk/cgdisk, mkfs.ext4, fsck, mount, df, umount
 
 # Which COMMAND can be used to interactively partition disk /dev/sda
 $ COMAMND /dev/sda
