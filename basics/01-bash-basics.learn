@@ -9,7 +9,7 @@
 # Lets learn how to use > , >> , < , &>
 
 # which REDIRECT can be used to save "Hello" to /tmp/hello.txt, truncating file
-$ echo "Hello" REDIRECT /tmp/hello.txt
+$ echo "Hello" > /tmp/hello.txt
 
 # which REDIRECT can be used to save "Hello" to /tmp/hello.txt, appending file
 $ echo "Hello" REDIRECT /tmp/hello.txt
