@@ -1,6 +1,6 @@
 # COMPLETE following for loop definition to print a, b and c
 # correct syntax errors if any
-$ for COMPLETE ; do echo $loop_var; done
+$ for var in a b c ; do echo $var; done
 
 # Write EXPRESSION which will allow following while loop to print a, b and c
 $ echo "a b c" | while EXPRESSION ; do echo $loop_var; done

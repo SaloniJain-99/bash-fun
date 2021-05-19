@@ -12,23 +12,23 @@
 $ echo "Hello" > /tmp/hello.txt
 
 # which REDIRECT can be used to save "Hello" to /tmp/hello.txt, appending file
-$ echo "Hello" REDIRECT /tmp/hello.txt
+$ echo "Hello" >> /tmp/hello.txt
 
 # Which REDIRECT can be used to save ls STDOUT and STDERR to /tmp/all.out file
-$ ls REDIRECT /tmp/all.out
+$ ls > /tmp/all.out 2>&1
 
 # Which REDIRECT can be used to send STDOUT to STDERR for ls
-$ ls REDIRECT
+$ ls >&2
 
 # Which REDIRECT can be used to send STDERR to STDOUT for ls
-$ ls REDIRECT
+$ ls 2>&1
 
 # PIPES
 #======
 
 # Which CONTROL operator can be used to pass ls command output to sort command 
 # for sorting
-$ ls CONTROL sort
+$ ls | sort
 
 # VARIABLES
 #==========
@@ -36,78 +36,78 @@ $ ls CONTROL sort
 # $?, $PATH, unset
 
 # Which BUILTIN(s) can be used to declare variable VAR1
-$ BUILTIN VAR1
+$ declare VAR1
 
 # Which BUILTIN can be used to display the attributes and values of variable VAR1 
-$ BUILTIN VAR1
+$ type VAR1
 
 # COMPLETE following echo statement to print value of variable VAR1
-$ echo COMPLETE
+$ echo $VAR1
 
 # Which BUILTIN can be used to display list of all variables (including 
 # environment variables) and functions
-$ BUILTIN
+$ printenv
 
 # Which BUILTIN will mark VAR1 for automatic export to the environment of  subse‐
 # quently  executed commands
-$ BUILTIN VAR1
+$ export VAR1
 
 # Which BUILTIN will set EDITOR variable to "/usr/bin/vim" and make available 
 # to sub-shells
-$ BUILTIN EDITOR=/usr/bin/vim
+$ export EDITOR=/usr/bin/vim
 
 # echo VARIABLE which defines primary prompt string
-$ echo VARIABLE
+$ echo $PS1
 
 # DEFINE VAR1 as read only variable
-$ DEFINE VAR1
+$ readonly VAR1
 
 # echo VARIABLE which displays exit status of last command
-$ echo VARIABLE
+$ echo $?
 
 # echo VARIABLE which contains the search  path  for commands
-$ echo VARIABLE
+$ echo $PATH
 
 # Which BUILTIN can be used to remove variable VAR1
-$ BUILTIN VAR1
+$ unset VAR1
 
 # BUILTINS
 #=========
 # kill, source/., :, alias, exit, history, read, shift, trap, type, ulimit, umask
 
 # Which BUILTIN can be used to send signal SIGTERM to process with pid 1000
-$ BUILTIN -SIGTERM 1000
+$ kill -SIGTERM 1000
 
 # Which BUILTIN(s) can be used to execute commands/ definitions from commands.sh
-$ BUILTIN commands.sh
+$ source/. commands.sh
 
 # Which BUILTIN indicates no operation
-$ BUILTIN
+$ :
 
 # Which BUILTIN with define "c" to be interpreted as "clear" in expansion
-$ BUILTIN c='clear'
+$ alias c='clear'
 
 # Which BUILTIN can be used to exit shell with status 1
-$ BUILTIN 1
+$ exit 1
 
 # Which BUILTIN is used to show bash history
-$ BUILTIN
+$ history
 
 # Which BUILTIN can be used to read value from user in variable MYVAR
-$ BUILTIN MYVAR
+$ read MYVAR
 
 # Which BUILTIN will shift positional parameters to left (n+1 to n)
-$ BUILTIN
+$ shift
 
-# Which BUILTIN can be used to execute "myfunction" if SIGTERM is recieved
-$ BUILTIN myfunction SIGTERM
+# Which BUILTIN can be used to execute "myfunction" if SIGTERM is received
+$ trap myfunction SIGTERM
 
 # Which BUILTIN will indicate how mycommand would be interpreted 
 # (as builtin, function, external command etc)
-$ BUILTIN mycommand
+$ type mycommand
 
 # Which BUILTIN can be used to resource limits to shell and processes
-$ BUILTIN
+$ ulimit
 
 # Which BUILTIN will display user file-creation mask
-$ BUILTIN
+$ umask

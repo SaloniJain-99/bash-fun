@@ -9,32 +9,32 @@
 # Fix syntax errors where applicable
 
 # Write COMMAND which will add o1 and o2 and save result in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= $o1 + $o2 && echo $RESULT
 
 # Write COMMAND which will subtract o2 from o1 and save result in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= $o1 - $o2 && echo $RESULT
 
 # Write COMMAND which will multiply o1 and o2 and save result in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= $o1 \* $o2 && echo $RESULT
 
 # Write COMMAND which will divide o1 by o2 and save quotient in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= $o1 \/ $o2 && echo $RESULT
 
 # Write COMMAND which will divide o1 by o2 and save remainder in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= $o1 \% $o2 && echo $RESULT
 
 # Write COMMAND which will increment value of o1 and save in RESULT
-$ RESULT=COMMAND && echo $RESULT
+$ RESULT= expr $[++o1] && echo $RESULT
 
 # Integer comparison
 #===================
 #http://tldp.org/LDP/abs/html/comparison-ops.html
 
 # Write COMPARISION to compare o1 and o2 and evaluate true
-$ if [ COMPARISION ] ; then echo "true"; fi
+$ if [ "$o1" -gt "$o2" ] ; then echo "true"; fi
 
 # Logically AND comparisons C1 and C2 in such a way that following displays Yes
-$ if [ C1 AND C2 ] ; then echo "Yes"; fi 
+$ if [ C1 -a C2 ] ; then echo "Yes"; fi 
 
 # Logically OR comparisons C1 and C2 in such a way that following displays Yes
-$ if [ C1 OR C2 ] ; then echo "Yes"; fi 
+$ if [ C1 -o C2 ] ; then echo "Yes"; fi 
